@@ -21,4 +21,4 @@ deploy:
   region: eu-central-1
   skip_cleanup: true
   upload-dir: travis-builds
-  local_dir: dpl_cd_upload
+  local_dir: upload
