@@ -7,6 +7,12 @@ python:
 # command to run tests
 script: python test/test.py TestLambda
 
+# zip lambda
+before_deploy:
+  - zip lambda_function -r project/*
+  - mkdir upload
+  - mv lambda_function.zip upload/lambda_function.zip
+
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY
@@ -15,3 +21,4 @@ deploy:
   region: eu-central-1
   skip_cleanup: true
   upload-dir: travis-builds
+  local_dir: dpl_cd_upload
