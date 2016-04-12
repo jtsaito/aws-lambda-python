@@ -35,6 +35,10 @@ This example is made for event objects created by the standard API Gateway integ
 }
 ```
 
+### Travis integration ###
+1. Create an S3 bucket, user, and AIM permissions to write to the bucket. Set permission for `Authenticated AWS users`.
+2. Set travis variables for user in TravisCI interface.
+
 ### Resources
 
 - http://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html
