@@ -1,4 +1,4 @@
-== #Run an AWS Lambda with Python ==
+## Run an AWS Lambda with Python
 
 1. Create a lamda for Python 2.7 handler.
 
@@ -35,10 +35,8 @@ This example is made for event objects created by the standard API Gateway integ
 }
 ```
 
+### Resources
 
-
-=== Resources ==
-
-http://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html
+- http://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html
 
 
